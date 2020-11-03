@@ -1,0 +1,138 @@
+/*  fontSize: */
+.xs   {font-size: 0.75rem}
+.sm   {font-size: 0.875rem}
+.base {font-size: 1rem}
+.lg   {font-size: 1.125rem}
+.xl   {font-size: 1.25rem}
+.xl2  {font-size: 1.5rem}
+.xl3  {font-size: 1.875rem}
+.xl4  {font-size: 2.25rem}
+.xl5  {font-size: 3rem}
+.xl6  {font-size: 4rem}
+.fs1  {font-size: 1vw}
+.fs2  {font-size: 1.4vw}
+.fs3  {font-size: 1.6vw}
+.fs4  {font-size: 1.8vw}
+.fs5  {font-size: 2vw}
+.fs6  {font-size: 2.2vw}
+.fs7  {font-size: 2.4vw}
+.fs8  {font-size: 2.6vw}
+
+body{
+    /*background-image: url(../images/img1.jpg);*/
+    background-size: cover;
+}
+header{
+    padding: 20px 40px;
+    padding-top: 50px;
+    min-height: 170px;
+    height: 170px;
+}
+header div{
+    display: inline-block;
+    text-align: center;
+}
+.logo{
+    line-height: 120px;
+    height: 120px;
+    text-align: center;
+}
+.login{
+    line-height: 80px;
+    height: 80px;
+    text-align: center;
+}
+
+.free-board , .notice{
+   margin-left: 20px;
+   margin-top : 20px;
+}
+.page-footer{
+    background-color:#4e4a4a;
+}
+nav{
+    margin: 0 auto;
+    background-color:#4e4a4a;
+}
+nav ul{
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    padding: 0px 55px;
+    float: none;
+}
+nav ul li:not(:last-child){
+    /*margin-right: 5%;*/
+}
+#section2{
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.carousel-item{
+    background-size: cover;
+    height:500px !important;
+}
+.carousel1{
+    background-image: url(../images/img1.jpg);
+}
+.carousel2{
+    background-image: url(../images/img2.jpg);
+}
+.carousel3{
+    background-image: url(../images/img6.jpg);
+}
+.carousel4{
+    background-image: url(../images/img4.jpg);
+}
+.board-imgbox{
+    padding: 20px 20px;
+}
+dl dd{
+    margin-bottom: 10px;
+}
+
+.parallax-container {
+    height: 400px;
+}
+
+.modal { width: 20% !important ; height: 50% !important ; }
+
+.join1_title{
+    margin: 100px 0px;
+}
+.join_box{
+    width: 100%;
+    height: 300px;
+    padding: 10px 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+.join2_box{
+    width: 100%;
+    padding: 10px 20px;
+
+}
+.join2_title {
+    position: relative;
+    padding: 0 0 10px 0;
+    font-size: 16px;
+    color: #2d2f43;
+    font-weight: 500;
+    border-bottom: 2px solid #3d435f;
+}
+#toast-container {
+    top: auto !important;
+    right: auto !important;
+    bottom: 50%;
+    left:40%;
+}
+.card-panel{
+    margin-bottom: 50px;
+}
+/*모바일 화면 미디어쿼리*/
+@media screen and (max-width: 768px) {
+    .modal { width: 100% !important ; height: 100% !important ; }
+}

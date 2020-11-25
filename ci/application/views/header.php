@@ -7,6 +7,8 @@
         }
         if(isset($this->session->userdata['admin'])){ //회원등급 체크
             $level =  $this->session->userdata['admin'];
+        }else{
+            $level ='';
         }
         
         
@@ -29,12 +31,16 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
+    <?php if($level == 0){?>
+        <a class=right href="admin">관리자 페이지</a>
+    <?php }else if($level ==''){ } ?>
         <!-- Warp -->
         <div class="container">
             <header class="row">
                 <div class="logo col l12 m12 s12">
                     <img width="250px" src="<?php echo base_url('assets/images/logo3.png');?>" alt="hello diver logo" onclick="home();" />
                 </div>
+                
             </header>
         </div>
         
@@ -52,7 +58,7 @@
                             <li><a class="modal-trigger" href="#modal1">로그인</a></li>
                             <li><a href="/Main/join1">회원가입</a></li>
                         <?php }else if ($login_now == true) { ?>
-                            <li><a href="/Main/mypage">My Page</a></li>
+                            <li><a href="/Mypage/mypage">My Page</a></li>
                             <li><a href="/Login/logout">로그아웃</a></li>
                         <?php } ?>
                             
@@ -71,7 +77,7 @@
                 <li><a class="modal-trigger" href="#modal1">로그인</a></li>
                 <li><a href="/Main/join1">회원가입</a></li>
             <?php }else if ($login_now == true) { ?>
-                <li><a class="">My Page</a></li>
+                <li><a class="" href="/Mypage/mypage">My Page</a></li>
                 <li><a class="" href="/Login/logout">로그아웃</a></li>
             <?php } ?>
         </ul>      

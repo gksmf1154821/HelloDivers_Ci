@@ -11,11 +11,11 @@ class Login_Model extends CI_Model {
     
     public function login_check($id,$pw){
         $this->db->where('id', $id);  
-
-        $this->db->where('password', $pw);  
+        $this->db->where('password', $pw); 
+        $this->db->where('delete_user', "N"); 
 
         $result = $this->db->get('MEMBER');  //Query 실행
-
+    
         if ( $result->num_rows() > 0)  { 
             return true; 
         }else{

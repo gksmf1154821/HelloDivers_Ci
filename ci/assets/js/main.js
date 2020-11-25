@@ -45,3 +45,8 @@ $(document).ready(function(){
 function home(){
     location.href="/Main/index/";
 }
+
+function todo(){
+    alert('준비중 입니다...');
+    return false;
+}

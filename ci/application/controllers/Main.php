@@ -58,18 +58,5 @@ class Main extends CI_Controller {
         $this->load->view('footer');
     }
     
-    public function mypage(){
-        $id = $this->session->userdata['id'];
-
-        $this->load->model('Mypage'); 
-
-        $get_profile = $this->Mypage->get_profile($id);
-
-        $this->load->view('header');
-        $this->load->view('mypage', $get_profile);
-        $this->load->view('footer');
-    }
-
-    
     
 }

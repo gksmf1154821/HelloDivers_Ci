@@ -2,16 +2,13 @@
 
         if(isset($this->session->userdata['name'])){
             $login_now = true;
+            if(isset($this->session->userdata['admin'])){ //회원등급 체크
+                $level =  $this->session->userdata['admin'];
+            }
         }else{
             $login_now = false;
+            $level = "N";
         }
-        if(isset($this->session->userdata['admin'])){ //회원등급 체크
-            $level =  $this->session->userdata['admin'];
-        }else{
-            $level ='';
-        }
-        
-        
 ?>
 <!doctype html>
 <html lang="en">
@@ -31,9 +28,9 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
-    <?php if($level == 0){?>
+    <?php if($level == '0'){?>
         <a class=right href="admin">관리자 페이지</a>
-    <?php }else if($level ==''){ } ?>
+    <?php } ?>
         <!-- Warp -->
         <div class="container">
             <header class="row">

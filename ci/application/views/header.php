@@ -33,11 +33,10 @@
     <?php } ?>
         <!-- Warp -->
         <div class="container">
-            <header class="row">
+            <header class="row mobile-header">
                 <div class="logo col l12 m12 s12">
                     <img width="250px" src="<?php echo base_url('assets/images/logo3.png');?>" alt="hello diver logo" onclick="home();" />
                 </div>
-                
             </header>
         </div>
         
@@ -47,10 +46,10 @@
                         <div class="nav-wrapper">
                         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                         <ul class="center hide-on-med-and-down">
-                            <li><a href="">프리다이빙</a></li>
-                            <li><a href="">스쿠버다이빙</a></li>
-                            <li><a href="">공지사항</a></li>
-                            <li><a href="">중고장터</a></li>
+                            <li><a href="/Board/board_list/freedive">프리다이빙</a></li>
+                            <li><a href="/Board/board_list/scuba">스쿠버다이빙</a></li>
+                            <li><a href="/Board/board_list/notice">공지사항</a></li>
+                            <li><a href="/Board/board_list/jungo">중고장터</a></li>
                         <?php if($login_now == false) { ?>
                             <li><a class="modal-trigger" href="#modal1">로그인</a></li>
                             <li><a href="/Main/join1">회원가입</a></li>

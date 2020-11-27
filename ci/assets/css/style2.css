@@ -134,6 +134,10 @@ dl dd{
 .card-panel{
     margin-bottom: 50px;
 }
+.write-btn{
+    text-align: right;
+    margin-top:20px;
+}
 .cus-btn{
     width: 100%;
     height: 60px;
@@ -144,8 +148,14 @@ dl dd{
     font-weight: 700;
     color: aliceblue;
 }
+.board-main{
+    height: 700px !important;
+}
 /*모바일 화면 미디어쿼리*/
 @media screen and (max-width: 768px) {
     .modal { width: 80% !important ; height: 100% !important ; }
     .hidden-modile{display: none;}
+    header{
+        display: none;
+    }
 }
